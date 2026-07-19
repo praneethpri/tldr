@@ -1,23 +1,23 @@
-# Style guide
+# ශෛලීය මාර්ගෝපදේශය
 
 This page lists specific formatting instructions for `tldr` pages.
 
-## Contents
+## අන්තර්ගතය
 
-1. [General layout](#general-layout)
-2. [Pages](#pages)
+1. [සාමාන්‍ය සැකැස්ම](#සාමාන්‍ය සැකැස්ම)
+2. [පිටු](#පිටු)
 3. [General writing](#general-writing)
 4. [Heading](#heading)
 5. [Example descriptions](#example-descriptions)
 6. [Example commands](#example-commands)
 7. [Language and translation rules](#language-and-translation-rules)
 
-## General layout
+## සාමාන්‍ය සැකැස්ම
 
 The basic format of each page should match the following template and have at most 8 command examples:
 
 ```md
-# command name
+# විධානයේ නම
 
 > Short, snappy command description.
 > Preferably one line; two are acceptable if necessary.
@@ -34,7 +34,7 @@ The basic format of each page should match the following template and have at mo
 ...
 ```
 
-Example:
+උදාහරණ:
 
 ```md
 # krita
@@ -43,7 +43,7 @@ Example:
 > See also: `gimp`.
 > More information: <https://docs.krita.org/en/reference_manual/linux_command_line.html>.
 
-- Start Krita:
+- Krita ආරම්භ කිරීම:
 
 `krita`
 
@@ -85,7 +85,7 @@ Depending on your client, you may be able to preview a page locally using the `-
 tldr --render path/to/tldr_page.md
 ```
 
-## Pages
+## පිටු
 
 ### Platform differences
 
