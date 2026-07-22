@@ -6,7 +6,7 @@ This page lists specific formatting instructions for `tldr` pages.
 
 1. [සාමාන්‍ය සැකැස්ම](#සාමාන්‍ය-සැකැස්ම)
 2. [පිටු](#පිටු)
-3. [සාමාන්‍ය ලිවීම](#සාමාන්‍ය-ලිවීම)
+3. [සාමාන්‍ය ලිවීම්](#සාමාන්‍ය-ලිවීම්)
 4. [ශීර්ෂය](#ශීර්ෂය)
 5. [උදාහරණ විස්තර](#උදාහරණ-විස්තර)
 6. [උදාහරණ විධාන](#උදාහරණ-විධාන)
@@ -256,7 +256,7 @@ Some terms are used repeatedly throughout pages, and as such, should be standard
 | Standard output | `` `stdout` ``
 | Standard error | `` `stderr` ``
 
-## Heading
+## ශීර්ෂය
 
 ### Program description
 
@@ -339,7 +339,7 @@ The heading should adhere to the following order:
 > More information: <https://example.com>.
 ```
 
-## Example descriptions
+## උදාහරණ විස්තර
 
 ### Short option mnemonics
 
@@ -370,7 +370,7 @@ For example, `[d]ownload` in English may be translated into `[d]escargar` in Spa
 > In cases where the character isn't present in the translated word, you can highlight the option next to the equivalent word or you can add the English word beside the translation inside a bracket.
 > For example, `E[x]tract` in English may be translated into `ekstrak [x]` or `ekstrak (E[x]tract)` in Indonesian.
 
-## Example commands
+## උදාහරණ විධාන
 
 ### Argument order
 
@@ -601,7 +601,7 @@ the part of the address that starts with `?view=`.
 If the command is specific to Windows, write paths with backslashes (`\`) instead of forward slashes (`/`), such as `{{path\to\file_or_directory}}`. Drive letters such as `C:` are optional unless the command input requires an absolute path
 or specific drive letter range, such as `cd /d {{C}}:{{path\to\directory}}`.
 
-## Language and translation rules
+## භාෂා හා පරිවර්තන නීති
 
 The below section contains additional language and translation-specific rules:
 
