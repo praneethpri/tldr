@@ -4,13 +4,13 @@ This page lists specific formatting instructions for `tldr` pages.
 
 ## අන්තර්ගතය
 
-1. [සාමාන්‍ය සැකැස්ම](#සාමාන්‍ය සැකැස්ම)
+1. [සාමාන්‍ය සැකැස්ම](#සාමාන්‍ය-සැකැස්ම)
 2. [පිටු](#පිටු)
-3. [General writing](#general-writing)
-4. [Heading](#heading)
-5. [Example descriptions](#example-descriptions)
-6. [Example commands](#example-commands)
-7. [Language and translation rules](#language-and-translation-rules)
+3. [සාමාන්‍ය ලිවීම](#සාමාන්‍ය-ලිවීම)
+4. [ශීර්ෂය](#ශීර්ෂය)
+5. [උදාහරණ විස්තර](#උදාහරණ-විස්තර)
+6. [උදාහරණ විධාන](#උදාහරණ-විධාන)
+7. [භාෂා හා පරිවර්තන නීති](#භාෂා-හා-පරිවර්තන-නීති)
 
 ## සාමාන්‍ය සැකැස්ම
 
@@ -87,7 +87,7 @@ tldr --render path/to/tldr_page.md
 
 ## පිටු
 
-### Platform differences
+### වේදිකා අතර වෙනස්කම්
 
 If you are afraid the commands may differ between platforms or operating systems (e.g. Windows vs macOS),
 most [tldr pages clients](https://github.com/tldr-pages/tldr/wiki/Clients) will choose the most suitable version of the command to be displayed to the end user.
@@ -97,7 +97,7 @@ will be displayed for Linux, macOS, and other platform users.
 
 Try to match the page filename with the invoked command. Do not use the project name if possible. The goal is to be as transparent as possible to the user when they are curious of a command.
 
-### Aliases
+### අන්වර්ථ නාම
 
 If a command can be called with alternative names (like `vim` can be called by `vi`), alias pages can be created to point the user to the original command name.
 
@@ -111,7 +111,7 @@ If a command can be called with alternative names (like `vim` can be called by `
 `tldr original_command_name`
 ```
 
-Example:
+උදාහරණ:
 
 ```md
 # vi
@@ -126,7 +126,7 @@ Example:
 
 - Pre-translated alias page templates can be found [here](https://github.com/tldr-pages/tldr/blob/main/contributing-guides/translation-templates/alias-pages.md).
 
-### Disambiguations
+### ව්‍යකුලතා මග හැරීම
 
 If there is a name collision between page names on the same platform, disambiguation pages can be used to direct users to different pages. Name the colliding pages with a dot and an appropriate suffix. Numbers starting from 1 can be used if no other suffix is appropriate. If the colliding page is an acronym, direct the user to a page with the name expanded.
 
@@ -146,7 +146,7 @@ In the following case `just.md` is the filename of the disambiguation page while
 `tldr just.js`
 ```
 
-### Grouping commands
+### විධාන කාණ්ඩ කිරීම
 
 Sometimes commands are meant to be used in combination with other commands. In these cases it makes sense to move them on the same page.
 
@@ -162,7 +162,7 @@ For example `adb disconnect` has a single way using it, but `adb` is expansive e
 `tldr adb connect`
 ```
 
-## General writing
+## සාමාන්‍ය ලිවීම්
 
 ### Emphasis
 
