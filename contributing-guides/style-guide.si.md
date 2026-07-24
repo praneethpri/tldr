@@ -1,6 +1,6 @@
 # ශෛලීය මාර්ගෝපදේශය
 
-This page lists specific formatting instructions for `tldr` pages.
+මෙම පිටුවේ `tldr` පිටු සඳහා නිශ්චිත ආකෘතිකරණ උපදෙස් සඳහන් කර ඇත.
 
 ## අන්තර්ගතය
 
@@ -14,20 +14,20 @@ This page lists specific formatting instructions for `tldr` pages.
 
 ## සාමාන්‍ය සැකැස්ම
 
-The basic format of each page should match the following template and have at most 8 command examples:
+එක් එක් පිටුවේ මුල් ආකෘතිය පහත දැක්වෙන ආකෘති සැකිල්ල සමග ගැලපිය යුතු අතර, ප්‍රධාන විධාන උදාහරණ 8 ක් උපරිම භාවිතා කරන්න:
 
 ```md
 # විධානයේ නම
 
-> Short, snappy command description.
-> Preferably one line; two are acceptable if necessary.
-> More information: <https://example.com/command_name/help/page>.
+> කෙටි, ඉක්මන් විධාන ලේඛනය.
+> එක් පේලියකින් දැක්වීම වඩාත් සුදුසුයි; අත්‍යවශ්‍ය නම් පේලි දෙකකින් දැක්විය හැකියි.
+> වැඩිදුර විස්තර: <https://example.com/command_name/help/page>.
 
-- Code description:
+- කේත විස්තරය:
 
 `command_name options`
 
-- Code description:
+- කේත විස්තරය:
 
 `command_name options`
 
@@ -39,27 +39,27 @@ The basic format of each page should match the following template and have at mo
 ```md
 # krita
 
-> A sketching and painting program designed for digital artists.
-> See also: `gimp`.
-> More information: <https://docs.krita.org/en/reference_manual/linux_command_line.html>.
+> ඩිජිටල් කලාකරුවන් සඳහා සිතුවම් ඇඳීම හා පින්තාරු කිරීමට නිර්මාණය කරන ලද යෙදුමකි.
+> තවද බලන්න: `gimp`.
+> වැඩිදුර විස්තර: <https://docs.krita.org/en/reference_manual/linux_command_line.html>.
 
 - Krita ආරම්භ කිරීම:
 
 `krita`
 
-- Open specific files:
+- නිශ්චිත ගොනුවක් විවෘත කරන්න:
 
 `krita {{path/to/image1 path/to/image2 ...}}`
 
-- Start without a splash screen:
+- මුල් ස්ප්ලෑශ් තිරය රහිතව ආරම්භ කරන්න:
 
 `krita --nosplash`
 
-- Start with a specific workspace:
+- නිශ්චිත වැඩ තලයක ආරම්භ කරන්න:
 
 `krita --workspace {{Animation}}`
 
-- Start in fullscreen mode:
+- සම්පූර්ණ තිරය පුරා විවෘත කරන්න:
 
 `krita --fullscreen`
 ```
