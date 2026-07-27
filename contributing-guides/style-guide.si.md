@@ -51,11 +51,11 @@
 
 `krita {{path/to/image1 path/to/image2 ...}}`
 
-- මුල් ස්ප්ලෑශ් තිරය රහිතව ආරම්භ කරන්න:
+- මුල් ස්ප්ලෑශ් තිරය (splash screen) රහිතව ආරම්භ කරන්න:
 
 `krita --nosplash`
 
-- නිශ්චිත වැඩ තලයක ආරම්භ කරන්න:
+- නිශ්චිත වැඩ තලයක workspace ආරම්භ කරන්න:
 
 `krita --workspace {{Animation}}`
 
@@ -65,29 +65,29 @@
 ```
 
 > [!NOTE]\
-> The page's filename and title must match the command name exactly. The page title can be present in any case, whereas the page's Markdown filenames must be lowercase.
+> මෙම පිටුවේ ගොනු නාමය සහ මාතෘකාව එකිනෙකට ගැලපිය යුතුයි. පිටු මාතෘකා uppercase හෝ lowercase අකුරු භාවිත කල හැකි අතර, Markdown පිටු වල ගොනු නාම lowercase අකුරු වලින් පමනක් ලිවිය යුතුය.
 
-There is a linter that enforces the format above.
-It is run automatically on every pull request,
-but you may install it to test your contributions locally before submitting them:
+ඉහත ආකෘතිය බලාත්මක කරන ලින්ටරයක් (linter) පවතී.
+එය ස්වයංක්‍රීයව සෑම pull request සඳහා ක්‍රියාත්මක වේ,
+නමුත් ඔබ විසින් එය ස්ථාපනය කර locally පරීක්ෂා කර contribute කරන්න.
 
 ```sh
 npm install --global tldr-lint
-tldr-lint path/to/tldr_page.md
+tldr-lint ගොනුව/වෙත/tldr_page.md
 ```
 
-For other ways to use `tldr-lint`, such as linting an entire directory, check out the
-[`tldr page on tldr-lint`](https://github.com/tldr-pages/tldr/blob/main/pages/common/tldr-lint.md). Alternatively, you can also use its alias `tldrl`.
+සම්පූර්ණ බහාලුමක් (directory) සඳහා linter යක් ක්‍රියාත්මක කිරීම වැනි, අනෙකුත් ආකාරයේ `tldr-lint` භාවිත සඳහා මෙම සබැඳිය බලන්න,
+[`tldr page on tldr-lint`](https://github.com/tldr-pages/tldr/blob/main/pages/common/tldr-lint.md). විකල්පයක් ලෙස `tldrl` අන්වර්ථ විධානයද භාවිතා කල හැක.
 
-Depending on your client, you may be able to preview a page locally using the `--render` flag:
+ඔබ භාවිත කරන client යෙදුම මත, ඇතැම් විට `--render` භාවිතයෙන් locally පෙරදසුනක් දැකිය හැක.
 
 ```sh
-tldr --render path/to/tldr_page.md
+tldr --render ගොනුව/වෙත/tldr_page.md
 ```
 
 ## පිටු
 
-### වේදිකා අතර වෙනස්කම්
+### Platform අතර වෙනස්කම්
 
 If you are afraid the commands may differ between platforms or operating systems (e.g. Windows vs macOS),
 most [tldr pages clients](https://github.com/tldr-pages/tldr/wiki/Clients) will choose the most suitable version of the command to be displayed to the end user.
@@ -97,7 +97,7 @@ will be displayed for Linux, macOS, and other platform users.
 
 Try to match the page filename with the invoked command. Do not use the project name if possible. The goal is to be as transparent as possible to the user when they are curious of a command.
 
-### අන්වර්ථ නාම
+### අන්වර්ථ නාම (aliases)
 
 If a command can be called with alternative names (like `vim` can be called by `vi`), alias pages can be created to point the user to the original command name.
 
@@ -126,7 +126,7 @@ If a command can be called with alternative names (like `vim` can be called by `
 
 - Pre-translated alias page templates can be found [here](https://github.com/tldr-pages/tldr/blob/main/contributing-guides/translation-templates/alias-pages.md).
 
-### ව්‍යකුලතා මග හැරීම
+### ව්‍යකුලතා මග හැරීම (Disambiguations)
 
 If there is a name collision between page names on the same platform, disambiguation pages can be used to direct users to different pages. Name the colliding pages with a dot and an appropriate suffix. Numbers starting from 1 can be used if no other suffix is appropriate. If the colliding page is an acronym, direct the user to a page with the name expanded.
 
